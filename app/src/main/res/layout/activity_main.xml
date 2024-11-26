@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewResultInstruction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Введіть дані:"
+        android:textSize="22sp"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="15dp"/>
+
+    <!-- Input Field for a -->
+    <EditText
+        android:id="@+id/editTextA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть середньодобову потужність, МВт: "
+        android:inputType="numberDecimal" />
+
+    <!-- Input Field for b -->
+    <EditText
+        android:id="@+id/editTextB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть відхилення, МВт: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введіть вартість енергії, грн/кВт*год: "
+        android:inputType="numberDecimal"
+        android:layout_marginTop="16dp" />
+
+    <!-- Calculate Button -->
+    <Button
+        android:id="@+id/buttonCalculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Вирахувати"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textViewIncome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Прибуток: "
+        android:textSize="18sp"
+        android:layout_marginTop="24dp" />
+
+    <TextView
+        android:id="@+id/textViewPenalty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Штраф: "
+        android:textSize="18sp"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/textViewAnswer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Чистий дохід: "
+        android:textSize="18sp"
+        android:layout_marginTop="14dp" />
+
+</LinearLayout>
